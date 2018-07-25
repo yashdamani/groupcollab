@@ -1,3 +1,4 @@
+//inheritance with function class parameters
 function Person(first, last, age, gender, interests) {
   this.name = {
     first,
