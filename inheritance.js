@@ -15,18 +15,23 @@ Person.prototype.greeting = function() {
 };	// added new property to the existing class Person
 
 
+
 function Teacher(first, last, age, gender, interests, subject) {
+	Person.call(this, first, last, age, gender, interests);
 
-  Person.call(this, first, last, age, gender, interests);
+  	this.subject = subject;
+}	//defining function class Teacher
 
-  this.subject = subject;
-}	////defining function class Teacher
-
-
-var teacher1= new Teacher("ths","hacking school",5,"NA","Bootcamp","MERN");
-var student1= new Person("ths","hacking school",5,"NA","Bootcamp");
+Teacher.prototype = Object.create(Person.prototype);
+Teacher.prototype.constructor; //Person
+Teacher.prototype.constructor = Teacher;
 
 
-console.log(teacher1.subject);
-console.log(student1.interests);
-console.log(student1.greeting())
+var person1 = new Person("ths","woot", 5, "NA", "botcamp");
+var teacher1 = new Teacher("ths2","woot2", 5, "NA", "botcamp", "CS101");
+// console.log(person1);
+// console.log(teacher1);
+
+// teacher1.greeting();
+console.log(Person.prototype); //returns Person
+(Person.prototype.constructor); //returns Person
