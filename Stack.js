@@ -7,7 +7,7 @@ Stack.prototype.push = function(element){
 	this.items.push(element);
 	this.size++;
 };
-
+//Iam from Sid laptop
 Stack.prototype.isEmpty = function(){
 	return this.size === 0;
 };
