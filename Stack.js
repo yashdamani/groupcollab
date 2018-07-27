@@ -24,20 +24,19 @@ Stack.prototype.pop = function(){
 
 	}
 };
-
-Stack.prototype.search = function(element){
-	if(this.isEmpty()) return "Can't search in an empty stack";
-	else {
-		for(let i=0; i<this.items.length; i++){
-			if(element===this.items[i])
-				return "Element found";
-		}
-		return "Element not found";
-	}
+ Stack.prototype.search = function(element){
+  if(element===this.isEmpty)
+	return "Stack is Empty";
+  else{
+	for(let i=0;i<this.items.length;i++)
+		if(element===this.items[i]){
+		return "Element found";
+}
+console.log("Element Not Found");	
 }
 
-
-
+	
+}
 
 
 let sobj = new Stack();
@@ -47,6 +46,6 @@ sobj.push(200);
 sobj.push(300);
 
 console.log(sobj.search(200));
-747// console.log(sobj);
+// console.log(sobj);
 // sobj.pop();
-console.log(sobj.search(2200));
+console.log(sobj.search(300));
