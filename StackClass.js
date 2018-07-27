@@ -43,4 +43,3 @@ obj1.push(300);
 
 console.log(obj1.search(200));
 console.log(obj1.search(1000));
-
