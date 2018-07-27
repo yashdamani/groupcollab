@@ -21,6 +21,7 @@ Stack.prototype.pop = function(){
 	else{
 		this.items.pop();
 		this.size--;
+
 	}
 };
 
@@ -34,6 +35,9 @@ Stack.prototype.search = function(element){
 		return "Element not found";
 	}
 }
+
+
+
 
 
 let sobj = new Stack();
