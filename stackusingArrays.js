@@ -34,7 +34,7 @@ Stack.prototype.search = function(element){
         return `Sucess, ${element} is Found`;
       }
     }
-   console.log(`Failure, ${element} not Found`);
+   return `Failure, ${element} not Found`;
   }
 }
 
