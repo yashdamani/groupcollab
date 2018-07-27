@@ -47,4 +47,4 @@ sobj.push(300);
 console.log(sobj.search(100));
 // console.log(sobj);
 // sobj.pop();
-console.log(sobj.search(400));
+console.log(sobj.search(300));
