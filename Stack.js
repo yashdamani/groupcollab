@@ -25,6 +25,20 @@ Stack.prototype.pop = function(){
 	}
 };
 
+Stack.prototype.search = function(element){
+	if(this.isEmpty()){
+		return 'stack is empty';
+	} else {
+		for(let i = 0; i < this.items.length; i++){
+		if(element === this.items[i]){
+			return 'element found';
+	}
+			
+	}
+		return 'element not found';
+}
+};
+
 
 let sobj = new Stack();
 
@@ -33,6 +47,6 @@ sobj.push(200);
 sobj.push(300);
 
 console.log(sobj.search(200));
-747// console.log(sobj);
+// console.log(sobj);
 // sobj.pop();
 console.log(sobj.search(2200));
