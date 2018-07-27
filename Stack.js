@@ -38,6 +38,7 @@ console.log("Element Not Found");
 	
 }
 
+
 let sobj = new Stack();
 
 sobj.push(100);
