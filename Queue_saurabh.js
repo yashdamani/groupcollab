@@ -24,7 +24,7 @@ Queue.prototype.shift = function(){
 };
 
 Queue.prototype.search = function(element){
-	if(this.isEmpty()) return "Can't search in an empty stack";
+	if(this.isEmpty()) return "Can't search in an empty Queue";
 	else {
 		for(let i=0; i<this.items.length; i++){
 			if(element===this.items[i])
