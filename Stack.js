@@ -48,3 +48,4 @@ console.log(sobj.search(100));
 // console.log(sobj);
 // sobj.pop();
 console.log(sobj.search(300));
+
