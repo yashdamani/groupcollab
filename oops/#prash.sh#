@@ -1,0 +1,5 @@
+case 
+git config user.name "ip11"
+git config user.email "iprash011@gmail.com"
+git config --global user.name "ip11"
+git config --global user.email "iprash011@gmail.com"
